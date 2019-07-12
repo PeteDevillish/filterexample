@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+<h1 id="welcome"></h1>
+somsifmeoffl
+<script>
+    function getParam(param){
+        return new URLSearchParams(window.location.search).get(param);
+    }
+    document.getElementById('welcome').innerText('Welcome' + getParam('login'));
+</script>
+</body>
+
+</html>
